@@ -1,4 +1,4 @@
-const numberOfFilms = +prompt('Сколько фильмов Вы уже посмотрели', '')
+const numberOfFilms = prompt('Сколько фильмов Вы уже посмотрели', '')
 
 const personalMovieDB = {
     count: numberOfFilms,
@@ -16,3 +16,4 @@ const lastWatchedMovieAnswer1 = prompt("Один ис последних про�
 personalMovieDB.movies[lastWatchedMovieAnswer1] = yourRateAnswer1;
 personalMovieDB.movies[lastWatchedMovieAnswer2] = yourRateAnswer2;
 
+console.log(personalMovieDB);
