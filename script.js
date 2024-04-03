@@ -42,6 +42,13 @@ const personalMovieDB = {
             console.log(personalMovieDB)
         }
      },
+     toggleVisibleMyDB: function (){
+        if(personalMovieDB.privat) {
+            personalMovieDB.privat = false
+        } else {
+            personalMovieDB.privat = true
+        }
+     },
      writeYourGeneres: function(){
         for( let i = 1; i < 4; i++){
             const genreAnswer = prompt(`Ваш любимый жанр под номером ${i}`);
